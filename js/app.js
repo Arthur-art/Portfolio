@@ -26,6 +26,36 @@ const Modal = {
       document.querySelector("#filmes").classList.remove("invisible");
     },
   };
+const ModalMoveit = {
+    openMoveit() {
+     document.querySelector(".modal-overlaymoveit").classList.add("active");
+     document.querySelector("#filmes").classList.add("invisible");
+    },
+    closeMoveit() {
+      document.querySelector(".modal-overlaymoveit").classList.remove("active");
+      document.querySelector("#filmes").classList.remove("invisible");
+    },
+  };
+const ModalFinance = {
+    openFinance() {
+     document.querySelector(".modal-overlaydevfinance").classList.add("active");
+     document.querySelector("#filmes").classList.add("invisible");
+    },
+    closeFinance() {
+      document.querySelector(".modal-overlaydevfinance").classList.remove("active");
+      document.querySelector("#filmes").classList.remove("invisible");
+    },
+  };
+const ModalInstagram = {
+    openInstagram() {
+     document.querySelector(".modal-overlaydevinstagram").classList.add("active");
+     document.querySelector("#filmes").classList.add("invisible");
+    },
+    closeInstagram() {
+      document.querySelector(".modal-overlaydevinstagram").classList.remove("active");
+      document.querySelector("#filmes").classList.remove("invisible");
+    },
+  };
 
   
   

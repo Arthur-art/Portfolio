@@ -47,19 +47,95 @@
         
         <div class="modal-overlay">
             <div class="modal">
-              <div id="form">
+              <div class="form">
                   <div>
                 <h1>ScienceNet</h1><br>
                 <h2>Description: </h2>
                 <p>Nesta aplicação eu desenvolvi um layaut meu baseado no site da Netflix, mas apenas com filmes de ciência e ficção científica.</p>
                 </div>
                 <a href="https://repository-movie-created-arthur-art.vercel.app/" style="color: white;" target="_blank">
-                  <div id="getSite">
+                  <div class="getSite">
                      <p> Seguir para a aplicação</p>
                   </div>
                 </a>
                   <a  style="color: white; cursor: pointer;" href="#" onclick="Modal.close()">
-                  <div id="cancelar">
+                  <div class="cancelar">
+                    <p>Fechar</p>
+                    </div>
+                </a>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-overlaymoveit">
+            <div class="modal">
+              <div class="form">
+                  <div>
+                <h1>Moveit</h1><br>
+                <h2>Description: </h2>
+                <p>Esta aplicação é um projeto da Rocketseat a #NLW4-React, um projeto onde 
+                    nos é ensinado a desenvolver um jogo no estilo pomodoro para estudar com eficiência 
+                    e lutar contra o sedentarismo.
+                </p>
+                </div>
+                <a href="https://moveit-next-created-arthur-art.vercel.app/" style="color: white;" target="_blank">
+                  <div class="getSite">
+                     <p> Seguir para a aplicação</p>
+                  </div>
+                </a>
+                  <a  style="color: white; cursor: pointer;" href="#" onclick="ModalMoveit.closeMoveit()">
+                  <div class="cancelar">
+                    <p>Fechar</p>
+                    </div>
+                </a>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-overlaydevfinance">
+            <div class="modal">
+              <div class="form">
+                  <div>
+                <h1>Devfinance</h1><br>
+                <h2>Description: </h2>
+                <p>Esta aplicação é um projeto da Rocketseat o Discovery, um projeto onde
+                    nos é ensinado a desenvolver um sistema para calcular as finanças.
+                </p>
+                </div>
+                <a href="https://dev-finance-created-arthur-art.vercel.app/" style="color: white;" target="_blank">
+                  <div class="getSite">
+                     <p> Seguir para a aplicação</p>
+                  </div>
+                </a>
+                  <a  style="color: white; cursor: pointer;" href="#" onclick="ModalFinance.closeFinance()">
+                  <div class="cancelar">
+                    <p>Fechar</p>
+                    </div>
+                </a>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-overlaydevinstagram">
+            <div class="modal">
+              <div class="form">
+                  <div>
+                <h1>Layaut - Instagram</h1><br>
+                <h2>Description: </h2>
+                <p>Nesta aplicação eu desenvolvi um layaut baseado no layaut de login do instagram,
+                     usando o conceito de flex-box para posicionar os elementos
+                </p>
+                </div>
+                <a href="https://cloning-instagram-web-arthur-art.vercel.app/" style="color: white;" target="_blank">
+                  <div class="getSite">
+                     <p> Seguir para a aplicação</p>
+                  </div>
+                </a>
+                  <a  style="color: white; cursor: pointer;" href="#" onclick="ModalInstagram.closeInstagram()">
+                  <div class="cancelar">
                     <p>Fechar</p>
                     </div>
                 </a>
@@ -75,22 +151,22 @@
 
             <div id="filmes" class="owl-carousel owl-theme ">
                 <div class="item">
-                    <a onclick="Modal.open()"  class="button" >
+                    <a onclick="Modal.open()"   >
                     <img class="box-filme" src="./src/img/ScienceNet.JPG" alt="">
                     </a>
                 </div>
                 <div class="item">
-                    <a href="https://moveit-next-created-arthur-art.vercel.app/" target="_blank">
+                    <a onclick="ModalMoveit.openMoveit()" target="_blank">
                     <img class="box-filme" src="./src/img/Moveit.JPG" alt="">
                     </a>
                 </div>
                 <div class="item">
-                    <a href="https://dev-finance-created-arthur-art.vercel.app/" target="_blank">
+                    <a onclick="ModalFinance.openFinance()" target="_blank">
                     <img class="box-filme" src="./src/img/DevFinance.JPG" alt="">
                     </a>
                 </div>
                 <div class="item">
-                    <a href="https://cloning-instagram-web-arthur-art.vercel.app/" target="_blank">
+                    <a onclick="ModalInstagram.openInstagram()" target="_blank">
                     <img class="box-filme" src="./src/img/Instagram.JPG" alt="">
                     </a>
                 </div>
