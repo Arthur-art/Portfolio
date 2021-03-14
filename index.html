@@ -38,34 +38,59 @@
                 <h1 class="titulo">ARTHUR TEIXEIRA S S</h1>
                 
                 <a href="#">
-                    <img class="profile" src="./src/img/Profile.JPG" alt="">
+                    <img class="profile" src="./src/img/Profile.JPG" >
                 </a>
                 <h3 class="tituloD">WELCOME TO MY PORTFOLIO</h3>
                 <p>See some of my applications:</p>
             </div>
-        </div>    
+        </div>   
+        
+        <div class="modal-overlay">
+            <div class="modal">
+              <div id="form">
+                  <div>
+                <h1>ScienceNet</h1><br>
+                <h2>Description: </h2>
+                <p>Nesta aplicação eu desenvolvi um layaut meu baseado no site da Netflix, mas apenas com filmes de ciência e ficção científica.</p>
+                </div>
+                <a href="https://repository-movie-created-arthur-art.vercel.app/" style="color: white;" target="_blank">
+                  <div id="getSite">
+                     <p> Seguir para a aplicação</p>
+                  </div>
+                </a>
+                  <a  style="color: white; cursor: pointer;" href="#" onclick="Modal.close()">
+                  <div id="cancelar">
+                    <p>Fechar</p>
+                    </div>
+                </a>
+                </form>
+              </div>
+            </div>
+          </div>
 
     </main>
 
     <div class="carrosel-filmes">
-            <div class="owl-carousel owl-theme">
+
+
+            <div id="filmes" class="owl-carousel owl-theme ">
                 <div class="item">
-                    <a href="https://repository-movie-created-arthur-art.vercel.app/" target="blank">
+                    <a onclick="Modal.open()"  class="button" >
                     <img class="box-filme" src="./src/img/ScienceNet.JPG" alt="">
                     </a>
                 </div>
                 <div class="item">
-                    <a href="https://moveit-next-created-arthur-art.vercel.app/" target="blank">
+                    <a href="https://moveit-next-created-arthur-art.vercel.app/" target="_blank">
                     <img class="box-filme" src="./src/img/Moveit.JPG" alt="">
                     </a>
                 </div>
                 <div class="item">
-                    <a href="https://dev-finance-created-arthur-art.vercel.app/" target="blank">
+                    <a href="https://dev-finance-created-arthur-art.vercel.app/" target="_blank">
                     <img class="box-filme" src="./src/img/DevFinance.JPG" alt="">
                     </a>
                 </div>
                 <div class="item">
-                    <a href="https://cloning-instagram-web-arthur-art.vercel.app/" target="blank">
+                    <a href="https://cloning-instagram-web-arthur-art.vercel.app/" target="_blank">
                     <img class="box-filme" src="./src/img/Instagram.JPG" alt="">
                     </a>
                 </div>
@@ -76,7 +101,7 @@
                 </div>
             </footer>
     </div>
-
+</div>
 
   <script src="./js/owl/jquery.min.js"></script>  
   <script src="./js/owl/owl.carousel.min.js"></script>  

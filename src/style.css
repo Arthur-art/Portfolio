@@ -4,6 +4,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+}
+h2 {
+  font-family: "Josefin Sans", sans-serif;
 }
 
 :root {
@@ -11,6 +19,10 @@
   --black: #141414;
   --font: #aaa;
   --fontWhite: #fff;
+}
+
+a {
+  cursor: pointer;
 }
 
 body {
@@ -63,19 +75,6 @@ header nav a:hover {
 
   font-family: "Josefin Sans", sans-serif;
 }
-
-/*.serie-principal {
-  font-size: 1.4rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
-    url("./img/Profile.JPG");
-  height: 40rem;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  margin-top: 0.5rem;
-}*/
 
 .tituloD {
   font-size: 2rem;
@@ -131,4 +130,59 @@ footer {
   font-family: "Josefin Sans", sans-serif;
   margin-bottom: 10rem;
   margin-top: 10rem;
+}
+
+/*Modal*/
+
+.modal {
+  max-width: 500px;
+  width: 100%;
+  background: #30363d;
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items:flex-end;
+  justify-content: end;
+  width: 1rem;
+  height: 1rem;
+  visibility: hidden;
+}
+
+.modal-overlay.active {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: 2;
+  justify-content: center;
+  visibility: visible;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+#cancelar {
+  border: solid 0.1rem white;
+  padding: 1rem;
+}
+
+#getSite {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border: solid 0.1rem white;
+  padding: 1rem;
+}
+
+.invisible {
+  position: fixed;
+  z-index: -1;
 }
