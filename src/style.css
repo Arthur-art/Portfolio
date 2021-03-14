@@ -86,8 +86,82 @@ header nav a:hover {
   background-size: cover;
   border-radius: 5rem;
   margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
+
+/*Animation*/
+.containercss {
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  margin-bottom: 2rem;
+}
+
+.containercss .last-container {
+  margin-left: 30px;
+}
+
+.containercss div > span {
+  color: red;
+}
+
+/*Animation*/
+.containercss .box-content {
+  height: 50px;
+  color: #fff;
+  display: block;
+  overflow: hidden;
+}
+
+.box-content div {
+  height: 45px;
+  padding: 4px 12px;
+  margin-bottom: 45px;
+  border-radius: 4px;
+}
+
+/*Animation*/
+.box-content div:first-child {
+  animation: show 5s linear 600ms infinite;
+  background: black;
+}
+
+.box-content div {
+  background: #42c58a;
+}
+
+.box-content div:last-child {
+  background: #dc143c;
+}
+
+/*Animation*/
+@keyframes show {
+  0% {
+    margin-top: 0px;
+  }
+  5% {
+    margin-top: -87px;
+  }
+  33% {
+    margin-top: -87px;
+  }
+  38% {
+    margin-top: -177px;
+  }
+  66% {
+    margin-top: -177px;
+  }
+  70% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+
 
 .container2 {
   display: flex;
@@ -111,7 +185,7 @@ p {
   justify-content: center;
 }
 
-/*Filmes*/
+/*Aplications*/
 
 .box-filme {
   height: 100%;
