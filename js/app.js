@@ -15,6 +15,32 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
+/*Anchor */
+
+let rocket = document.querySelector('.rocket')
+      let topBtn = document.querySelector('.topbtn')
+
+      window.onscroll = function () {
+        topBtn.classList.toggle('active', window.scrollY > 120)
+
+        let topBtonActive = topBtn.classList.contains('active')
+        if (topBtonActive != true) {
+          setTimeout(function () {
+            rocket.classList.remove('active')
+          }, 300)
+        }
+      }
+
+      //para subir para o top d pagina
+      $(document).ready(function () {
+        $('.topbtn').click(function () {
+          $('.rocket').addClass('active')
+          setTimeout(() => {
+            $('html, body').animate({ scrollTop: 0 }, 1500)
+          }, 200)
+        })
+      })
+
 
 const Modal = {
     open() {
