@@ -162,7 +162,6 @@ header nav a:hover {
   }
 }
 
-
 .container2 {
   display: flex;
   padding: 2rem;
@@ -208,54 +207,53 @@ footer {
 
 /*Modal*/
 
-
 .modal-overlay {
   background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
   top: 0;
   display: flex;
-  align-items:flex-end;
+  align-items: baseline;
   justify-content: end;
   width: 0rem;
   height: 0rem;
   visibility: hidden;
 }
 
-.modal-overlaymoveit{
+.modal-overlaymoveit {
   background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
   top: 0;
   display: flex;
-  align-items:flex-end;
+  align-items: baseline;
   justify-content: end;
   width: 0rem;
   height: 0rem;
   visibility: hidden;
 }
-.modal-overlaydevfinance{
+.modal-overlaydevfinance {
   background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
   top: 0;
   display: flex;
-  align-items:flex-end;
+  align-items: baseline;
   justify-content: end;
   width: 0rem;
   height: 0rem;
   visibility: hidden;
 }
-.modal-overlaydevinstagram{
+.modal-overlaydevinstagram {
   background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
   top: 0;
   display: flex;
-  align-items:flex-end;
+  align-items: baseline;
   justify-content: end;
   width: 0rem;
   height: 0rem;
   visibility: hidden;
 }
 
- .modal {
+.modal {
   max-width: 500px;
   width: 100%;
   background: #30363d;
@@ -294,7 +292,6 @@ footer {
   position: fixed;
   z-index: -1;
 }
-
 
 /*background animation
 
@@ -439,7 +436,7 @@ footer {
 }
 
 .progressbar::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -450,7 +447,7 @@ footer {
 }
 
 .progressbar::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -469,7 +466,7 @@ footer {
   height: 70px;
   cursor: pointer;
   color: white;
-  
+
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -508,7 +505,7 @@ footer {
 }
 
 .rocket.active::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -56px;
   left: 50%;
@@ -516,11 +513,10 @@ footer {
   width: 7px;
   height: 60px;
   border-radius: 0 0 50px;
-  
 }
 
 .rocket.active::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -56px;
   left: 50%;
@@ -528,6 +524,6 @@ footer {
   width: 7px;
   height: 60px;
   border-radius: 0 0 50px;
-  
+
   filter: blur(20px);
 }
