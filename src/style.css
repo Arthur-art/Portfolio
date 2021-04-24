@@ -219,6 +219,17 @@ footer {
   height: 0rem;
   visibility: hidden;
 }
+.modal-overlayModalCovid {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: end;
+  width: 0rem;
+  height: 0rem;
+  visibility: hidden;
+}
 
 .modal-overlaymoveit {
   background-color: rgba(0, 0, 0, 0.7);
